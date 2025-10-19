@@ -1,0 +1,325 @@
+my-website/                
+├─ index.html
+├─ about.html
+├─ contact.html
+├─ css/
+│  └─ styles.css
+├─ js/
+│  └─ script.js
+├─ images/
+│  └─ (тут можно положить картинки)
+├─ README.md
+├─ .gitignore
+└─ LICENSE
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мой сайт — Главная</title>
+  <meta name="description" content="Простой современный сайт, развёрнутый на GitHub Pages." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">МойСайт</a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О проекте</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="Меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Привет! Это твой сайт на GitHub Pages</h1>
+        <p>Быстро, красиво и бесплатно — разместим проект за пару минут.</p>
+        <p><a class="btn" href="about.html">Узнать больше</a></p>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h3>Адаптивный дизайн</h3>
+        <p>Сайт одинаково удобно смотрится на телефонах, планшетах и десктопах.</p>
+      </article>
+      <article>
+        <h3>Простота редактирования</h3>
+        <p>Редактируй HTML/CSS/JS — и изменения появятся мгновенно после пуша.</p>
+      </article>
+      <article>
+        <h3>Бесплатный хостинг</h3>
+        <p>GitHub Pages даёт стабильный и бесплатный хостинг для статических сайтов.</p>
+      </article>
+    </section>
+
+    <section class="showcase">
+      <div class="container">
+        <h2>Галерея / Демонстрация</h2>
+        <div class="grid">
+          <div class="card">Блок 1</div>
+          <div class="card">Блок 2</div>
+          <div class="card">Блок 3</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Твой сайт • Сделано с ♥</p>
+      <p><a href="contact.html">Написать нам</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>О проекте — Мой сайт</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">МойСайт</a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О проекте</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <button id="menuToggle2" class="menu-toggle" aria-label="Меню">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>О проекте</h1>
+    <p>Здесь можно разместить информацию о себе, своих услугах или портфолио.</p>
+    <h2>Как редактировать</h2>
+    <ol>
+      <li>Открой файл <code>about.html</code> в текстовом редакторе.</li>
+      <li>Измени тексты, добавь фото в папку <code>images/</code>.</li>
+      <li>Сохрани, закомить и отправь изменения на GitHub.</li>
+    </ol>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> Твой сайт</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты — Мой сайт</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">МойСайт</a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О проекте</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <button id="menuToggle3" class="menu-toggle" aria-label="Меню">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Контакты</h1>
+    <p>Свяжитесь со мной по электронной почте или через форму ниже.</p>
+
+    <form class="contact-form" onsubmit="alert('Это демо-форма — настрой отправку через форму-провайдера.'); return false;">
+      <label>Имя
+        <input type="text" name="name" required />
+      </label>
+
+      <label>Эл. почта
+        <input type="email" name="email" required />
+      </label>
+
+      <label>Сообщение
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+
+    <p>Или напиши напрямую: <a href="mailto:you@example.com">you@example.com</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Твой сайт</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+:root{
+  --bg:#f6f7fb;
+  --accent:#2b7aee;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --radius:10px;
+  --maxw:1100px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+.container{
+  width:90%;
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding: clamp(12px,2vw,28px) 0;
+}
+
+/* header */
+.site-header{
+  background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.9));
+  border-bottom:1px solid #e6e9ef;
+  position:sticky;
+  top:0;
+  z-index:20;
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.logo{
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  font-size:1.1rem;
+}
+.nav{display:flex;gap:14px}
+.nav a{color:var(--muted); text-decoration:none; padding:10px 6px; border-radius:6px;}
+.nav a:hover{background:#eef4ff; color:var(--accent);}
+
+.menu-toggle{display:none; background:none; border:0; font-size:1.25rem; cursor:pointer}
+
+/* hero */
+.hero{
+  background:linear-gradient(120deg, rgba(43,122,238,0.09), rgba(43,122,238,0.03));
+  padding:48px 0;
+  border-bottom:1px solid rgba(0,0,0,0.03);
+}
+.hero h1{margin:0 0 8px; font-size:clamp(1.6rem,3vw,2.6rem)}
+.hero p{margin:0 0 14px; color:var(--muted)}
+
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  padding:10px 16px;
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(43,122,238,0.12);
+}
+
+/* features */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  padding:28px 0;
+}
+.features article{
+  background:var(--card);
+  padding:16px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(16,24,40,0.04);
+}
+
+/* showcase */
+.showcase{padding:30px 0}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:14px;
+}
+.card{
+  background:linear-gradient(180deg,#fff,#fbfdff);
+  border-radius:8px;
+  padding:26px;
+  text-align:center;
+  box-shadow:0 8px 24px rgba(16,24,40,0.04);
+}
+
+/* footer */
+.site-footer{
+  border-top:1px solid #e6e9ef;
+  padding:18px 0;
+  color:var(--muted);
+  font-size:0.95rem;
+  text-align:center;
+}
+
+/* contact form */
+.contact-form{max-width:640px; margin:18px 0 60px}
+.contact-form label{display:block; margin-bottom:12px; color:#333}
+.contact-form input, .contact-form textarea{
+  width:100%; padding:10px 12px; border-radius:8px; border:1px solid #dbe3f0;
+  background:white; font-size:1rem;
+}
+.contact-form button{margin-top:6px}
+
+/* responsive */
+@media (max-width:800px){
+  .nav{display:none}
+  .menu-toggle{display:block}
+}
+document.addEventListener('DOMContentLoaded', function(){
+  const y = new Date().getFullYear();
+  ['year','year2','year3'].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.textContent = y;
+  });
+
+  function toggleMenu(btnId){
+    const btn = document.getElementById(btnId);
+    if(!btn) return;
+    btn.addEventListener('click', ()=>{
+      const nav = document.querySelector('.nav');
+      if(!nav) return;
+      if(nav.style.display === 'flex'){
+        nav.style.display = '';
+      } else {
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'column';
+        nav.style.gap = '12px';
+      }
+    });
+  }
+  toggleMenu('menuToggle');
+  toggleMenu('menuToggle2');
+  toggleMenu('menuToggle3');
+});
